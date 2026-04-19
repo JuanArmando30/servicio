@@ -1,0 +1,58 @@
+.dashboard {
+    width: 100%;
+}
+
+/* STATS */
+.stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #eef1f6;
+    transition: 0.2s ease;
+}
+
+.stat-card:hover {
+    border-color: #dcdfe6;
+    transform: translateY(-2px);
+}
+
+.stat-title {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.stat-card h4 {
+    margin: 5px 0 0;
+    font-weight: 600;
+}
+
+/* CARDS LIMPIAS */
+.clean-card {
+    border: 1px solid #eef1f6;
+    border-radius: 12px;
+    background: #fff;
+}
+
+/* LISTA */
+.list-group-item {
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE AJUSTES */
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 15px;
+    }
+}
+
+/* EXPANDIR */
+#wrapper {
+    min-height: 100vh;
+}
+
+#page-content-wrapper {
+    flex: 1;
+    width: 100%;
+    background: #f8fafc;
+}

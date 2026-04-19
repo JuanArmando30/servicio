@@ -1,0 +1,44 @@
+
+/* Sidebar ancho */
+#sidebarMenu {
+    width: 260px;
+}
+
+/* Links generales */
+.nav-link {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover AMARILLO */
+.nav-link:hover {
+    background-color: #ffc107; /* amarillo bootstrap */
+    color: #000;
+    transform: translateX(5px);
+}
+
+/* Activo */
+.nav-link.active {
+    background: linear-gradient(45deg, #ffc107, #ffca2c);
+    color: #000;
+}
+
+/* ICONOS */
+.nav-link i {
+    font-size: 1.2rem;
+}
+
+/* BOTÓN CERRAR SESIÓN */
+.logout-btn {
+    color: #dc3545; /* rojo bootstrap */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover cerrar sesión */
+.logout-btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+    transform: translateX(5px);
+}
