@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Fondo general */
 .login-container {
     background: url('../img/login.jpg') no-repeat center center;
@@ -39,6 +47,40 @@
     border-radius: 7px;
 }
 
+.left-section h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 52px;
+    text-align: justify;
+}
+
+.left-section .phrase {
+    width: 80%;
+    text-align: justify;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* CONTENEDOR DE INFORMACIÓN */
+.content_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section .phrase {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section .phrase span:last-child {
+    text-align: end;
+    margin-top: 10px;
+    font-style: italic;
+}
+
 /* Lado derecho */
 .login-card {
     width: 100%;
@@ -65,6 +107,77 @@
     border-radius: 8px;
     font-weight: bold;
 }
+
+/* ELEMENTOS DEL CUADRO DE LOGIN */
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+    background: #E4E4E4;
+}
+
+input[type="text"] {
+    width: 100% ;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+    background: #E4E4E4;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.password-container input[type="password"] {
+    flex: 1;
+    padding-right: 40px; /* Deja espacio a la derecha para el icono */
+}
+
+.password-container .material-icons {
+    position: absolute;
+    right: 10px; /* Posiciona el icono a 10px del borde derecho */
+    cursor: pointer;
+}
+
+#remember_user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#remember_user span{
+    font-size: 13px;
+}
+
+#remember_user input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 
 /* Responsive ajustes */
 @media (max-width: 991px) {
