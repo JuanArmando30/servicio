@@ -12,7 +12,7 @@
         <div class="col-6 col-md-3">
             <div class="stat-card">
                 <span class="stat-title">Alumnos</span>
-                <h4>120</h4>
+                <h4>205</h4>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                     <div class="d-flex justify-content-between mb-3">
                         <h6 class="fw-semibold mb-0">Pagos de la semana</h6>
                     </div>
-                    <canvas id="graficaPagos"></canvas>
+                    <div id="graficaPagos"></div>
                 </div>
             </div>
         </div>

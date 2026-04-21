@@ -1,44 +1,65 @@
 
-/* Sidebar ancho */
+/* ── SIDEBAR BASE ───────────────────────────────────────── */
 #sidebarMenu {
     width: 260px;
 }
 
-/* Links generales */
+/* En desktop: sidebar estático dentro del flex */
+@media (min-width: 768px) {
+    #sidebarMenu {
+        position: sticky;        /* Se queda fijo al hacer scroll */
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        flex-shrink: 0;          /* No se encoge con el contenido */
+    }
+
+    /* El offcanvas-body ocupa todo el alto disponible */
+    #sidebarMenu .offcanvas-body {
+        height: 100%;
+    }
+}
+
+/* ── LINKS ──────────────────────────────────────────────── */
 .nav-link {
     border-radius: 10px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
 }
 
-/* Hover AMARILLO */
 .nav-link:hover {
-    background-color: #ffc107; /* amarillo bootstrap */
-    color: #000;
+    background-color: #ffc107;
+    color: #000 !important;
     transform: translateX(5px);
 }
 
-/* Activo */
 .nav-link.active {
     background: linear-gradient(45deg, #ffc107, #ffca2c);
-    color: #000;
+    color: #000 !important;
 }
 
-/* ICONOS */
 .nav-link i {
     font-size: 1.2rem;
 }
 
-/* BOTÓN CERRAR SESIÓN */
+/* ── CERRAR SESIÓN ──────────────────────────────────────── */
 .logout-btn {
-    color: #dc3545; /* rojo bootstrap */
+    color: #dc3545 !important;
     border-radius: 10px;
     transition: all 0.3s ease;
 }
 
-/* Hover cerrar sesión */
 .logout-btn:hover {
     background-color: #dc3545;
-    color: #fff;
+    color: #fff !important;
     transform: translateX(5px);
+}
+
+/* ── WRAPPER ────────────────────────────────────────────── */
+#wrapper {
+    min-height: 100vh;
+}
+
+#page-content-wrapper {
+    min-width: 0; /* Evita desbordamiento con flex */
 }
