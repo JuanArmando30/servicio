@@ -10,7 +10,7 @@ $currentPage = isset($_GET['op']) ? strtolower($_GET['op']) : 'bienvenida';
 
     <!-- Header solo en móvil -->
     <div class="offcanvas-header d-md-none border-bottom border-secondary">
-        <h5 class="offcanvas-title text-white" id="sidebarMenuLabel">Menú</h5>
+        <h6 class="offcanvas-title text-white" id="sidebarMenuLabel">Sistema Integral VG</h6>
         <button type="button" class="btn-close btn-close-white" 
                 data-bs-dismiss="offcanvas" 
                 data-bs-target="#sidebarMenu"></button>
@@ -55,7 +55,7 @@ $currentPage = isset($_GET['op']) ? strtolower($_GET['op']) : 'bienvenida';
             <li class="nav-item">
                 <a href="?op=qr" 
                    class="nav-link text-white <?php echo ($currentPage == 'qr') ? 'active' : ''; ?>">
-                    <i class="bi bi-qr-code-scan me-2"></i> Escanear QR
+                    <i class="bi bi-qr-code-scan me-2"></i> Generar QR
                 </a>
             </li>
 

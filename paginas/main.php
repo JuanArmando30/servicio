@@ -12,6 +12,7 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="/SERVICIO/assets/css/menu.css">
     <link rel="stylesheet" href="/SERVICIO/assets/css/dashboard.css">
+    <link rel="stylesheet" href="/SERVICIO/assets/css/qr.css">
 </head>
 
 <body>
@@ -31,6 +32,7 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
                         data-bs-target="#sidebarMenu">
                     <i class="bi bi-list fs-4"></i>
                 </button>
+                <span class="text-white fw-bold">Sistema Integral VG</span>
             </nav>
 
             <!-- Página actual -->

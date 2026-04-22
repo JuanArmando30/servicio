@@ -1,0 +1,100 @@
+/* =============================================
+   QR PAGE — consistente con el dashboard
+   ============================================= */
+
+/* Encabezado */
+.container h2 {
+    font-weight: 700;
+    color: #1a202c;
+    font-size: 1.4rem;
+}
+
+/* ---- ACTION CARDS (Generar individual / masivo) ---- */
+.card.shadow-sm {
+    border: 1px solid #eef1f6;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: none !important;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.shadow-sm:hover {
+    border-color: #dcdfe6;
+    transform: translateY(-3px);
+}
+
+.card.shadow-sm h5 {
+    font-weight: 600;
+    color: #1a202c;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+/* ---- BOTONES AMARILLOS ---- */
+.btn-primary,
+.btn-success {
+    background: #f5c518;
+    border: none;
+    color: #1a202c;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 8px 24px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: #ffc107;
+    color: #1a202c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(245, 197, 24, 0.4);
+}
+
+.btn-primary:active,
+.btn-success:active {
+    background: #c89a0a;
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ---- STAT CARDS (fila de seguimiento) ---- */
+.row .col-md-4 .card {
+    border: 1px solid #eef1f6;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: none !important;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    padding: 16px;
+}
+
+.row .col-md-4 .card:hover {
+    border-color: #dcdfe6;
+    transform: translateY(-2px);
+}
+
+.row .col-md-4 .card h6 {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.row .col-md-4 .card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0;
+}
+
+.row .col-md-4 .card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Acento amarillo en la stat card al hover */
+.row .col-md-4 .card:hover {
+    border-color: #dcdfe6;
+    transform: translateY(-3px);
+}
