@@ -21,6 +21,15 @@
 
 <body>
 
+    <div class="contentMensaje" id="contentMensaje">
+        <div class="mensajeError mostrar" id="ventanaError">
+            <span class="material-icons">error</span>
+            <div class="titulo-message">Inicio de sesión incorrecto</div>
+            <div class="error-message">La contraseña o el usuario ingresado es incorrecto</div>
+            <div class="cerrar-message">(Da un clic para cerrar la ventana)</div>
+        </div>
+    </div>
+
     <div class="container-fluid vh-100 d-flex align-items-center justify-content-center login-container">
         <div class="row w-100 h-100">
 

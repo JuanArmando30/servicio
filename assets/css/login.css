@@ -186,3 +186,109 @@ input[type="text"] {
         padding: 20px;
     }
 }
+
+
+/* ERROR EN INICIO DE SESIÓN */
+
+.contentMensaje{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    z-index: 8;
+
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.mensajeError{
+    max-width: 350px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: block;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 300ms;
+    z-index: 400;
+
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px);
+
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.mensajeError.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mensajeError.ocultar {
+    opacity: 0;
+    transform: scale(0.9);
+    z-index: -10;
+}
+
+.contentMensaje.ocultar_content {
+    opacity: 0;
+    transform: scale(0.9);
+    z-index: -10;
+}
+
+.mensajeError span {
+    font-size: 48px;
+    color: #c61515;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: alerta 1.2s infinite;
+}
+
+.titulo-message{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.error-message {
+    width: 100%;
+    font-size: 14px;  
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cerrar-message {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}
+
+/*Evento de cerrar ventana*/
+.mensajeError[data-on="off"]{
+    transform: scale(0);
+}
+
+@keyframes alerta {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(-5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
