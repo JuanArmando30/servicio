@@ -47,6 +47,7 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="../assets/js/graficaDashboard.js"></script>
+    <script src="../assets/js/qr.js"></script>
 
 </body>
 </html>
