@@ -1,0 +1,144 @@
+/* ── PÁGINA ─────────────────────────────────────── */
+.alumnos-page {
+    width: 100%;
+}
+
+/* ── BADGE CONTADOR ─────────────────────────────── */
+.badge-contador {
+    background: #fef9e7;
+    border: 1px solid #ffc107;
+    color: #856404;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    align-self: center;
+}
+
+/* ── FILTROS ────────────────────────────────────── */
+.filter-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.filter-input {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 0.88rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-input:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.15);
+}
+
+/* ── TABLA ──────────────────────────────────────── */
+.tabla-alumnos {
+    border-collapse: collapse;
+    font-size: 0.88rem;
+}
+
+.tabla-alumnos thead tr {
+    background: #f8fafc;
+    border-bottom: 2px solid #eef1f6;
+}
+
+.tabla-alumnos th {
+    padding: 12px 16px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.tabla-alumnos td {
+    padding: 13px 16px;
+    border-bottom: 1px solid #f0f3f7;
+    color: #2d3748;
+    vertical-align: middle;
+}
+
+.tabla-alumnos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-alumnos tbody tr {
+    transition: background 0.15s ease;
+}
+
+.tabla-alumnos tbody tr:hover {
+    background: #fffbea;
+}
+
+/* ── COLUMNA # ──────────────────────────────────── */
+.tabla-alumnos td:first-child {
+    color: #a0aec0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 48px;
+}
+
+/* ── NOMBRE ─────────────────────────────────────── */
+.nombre-alumno {
+    font-weight: 600;
+    color: #1a202c;
+}
+
+/* ── BADGES GRADO / GRUPO ───────────────────────── */
+.badge-grado {
+    background: #e8f4fd;
+    color: #1a6ea8;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.badge-grupo {
+    background: #f0fdf4;
+    color: #16a34a;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* ── QR ─────────────────────────────────────────── */
+.badge-qr {
+    background: #f5f5f5;
+    color: #555;
+    font-family: monospace;
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    letter-spacing: 0.03em;
+}
+
+.badge-sin-qr {
+    color: #cbd5e0;
+    font-size: 0.78rem;
+    font-style: italic;
+}
+
+/* ── FECHA ──────────────────────────────────────── */
+.fecha-registro {
+    color: #718096;
+    font-size: 0.82rem;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 768px) {
+    .tabla-alumnos th:nth-child(5),
+    .tabla-alumnos td:nth-child(5),
+    .tabla-alumnos th:nth-child(6),
+    .tabla-alumnos td:nth-child(6) {
+        display: none; /* Oculta QR y fecha en móvil */
+    }
+}
