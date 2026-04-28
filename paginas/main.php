@@ -4,6 +4,7 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Sistema Comedor</title>
@@ -27,9 +28,9 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
 
             <!-- Topbar móvil: contiene el botón toggle -->
             <nav class="navbar bg-dark d-md-none px-3">
-                <button class="btn btn-outline-light" 
-                        data-bs-toggle="offcanvas" 
-                        data-bs-target="#sidebarMenu">
+                <button class="btn btn-outline-light"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebarMenu">
                     <i class="bi bi-list fs-4"></i>
                 </button>
                 <span class="text-white fw-bold">Sistema Integral VG</span>
@@ -46,8 +47,14 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="../assets/js/graficaDashboard.js"></script>
-    <script src="../assets/js/qr.js"></script>
+
+    <?php if ($pagina === 'qr'): ?>
+        <script src="../assets/js/graficaDashboard.js"></script>
+    <?php endif; ?>
+
+    <?php if ($pagina === 'qr'): ?>
+        <script src="../assets/js/qr.js"></script>
+    <?php endif; ?>
 
 </body>
 </html>

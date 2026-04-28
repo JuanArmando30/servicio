@@ -1,6 +1,6 @@
 <?php
-include "conexion.php";
-include "../phpqrcode/qrlib.php";
+include "../conexion.php";
+include "../../phpqrcode/qrlib.php";
 
 // Validar datos
 if (!isset($_POST['nombre'])) {
@@ -28,7 +28,7 @@ $id = mysqli_insert_id($conn);
 $codigo = bin2hex(random_bytes(8));
 
 // 4. Crear carpeta si no existe
-$dir = "../assets/qrs/";
+$dir = "../../assets/qrs/";
 if (!file_exists($dir)) {
     mkdir($dir, 0777, true);
 }
