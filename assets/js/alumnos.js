@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             data.alumnos.forEach((alumno, index) => {
                 const qrHtml = alumno.codigo_qr
-                    ? `<span class="badge-qr">${alumno.codigo_qr.substring(0, 12)}...</span>`
+                    ? `<span class="badge-qr">${alumno.codigo_qr.substring(0, 12)}</span>`
                     : `<span class="badge-sin-qr">Sin QR</span>`;
 
                 const fecha = alumno.fecha_registro

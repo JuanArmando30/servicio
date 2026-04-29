@@ -1,6 +1,6 @@
 <div class="container mt-4">
-  <h2 class="my-1">Generación de Códigos QR</h2>
-  <p class="text-muted">Administra y genera códigos para alumnos</p>
+  <h3 class="fw-semibold my-2">Generación de Códigos QR</h3>
+  <p class="text-muted small">Administra y genera códigos para alumnos</p>
 
   <div class="row mt-4">
 

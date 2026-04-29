@@ -1,6 +1,6 @@
 <?php
-include "../conexion.php";
-include "../../phpqrcode/qrlib.php";
+include __DIR__ . "/conexion.php";
+include __DIR__ . "/../../phpqrcode/qrlib.php";
 
 // Validar datos
 if (!isset($_POST['nombre'])) {
@@ -25,7 +25,11 @@ if (!mysqli_query($conn, $sql)) {
 $id = mysqli_insert_id($conn);
 
 // 3. Generar código único (más seguro)
-$codigo = bin2hex(random_bytes(8));
+$caracteres = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+$codigo = '';
+for ($j = 0; $j < 10; $j++) {
+    $codigo .= $caracteres[random_int(0, strlen($caracteres) - 1)];
+}
 
 // 4. Crear carpeta si no existe
 $dir = "../../assets/qrs/";

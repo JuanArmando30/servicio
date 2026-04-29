@@ -3,7 +3,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 header('Content-Type: application/json');
 
-include "../conexion.php";
+include __DIR__ . "/conexion.php";
 
 // 1. Total de QR generados (alumnos con código asignado)
 $resTotal = mysqli_query($conn, "

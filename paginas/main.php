@@ -14,6 +14,8 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
     <link rel="stylesheet" href="/SERVICIO/assets/css/menu.css">
     <link rel="stylesheet" href="/SERVICIO/assets/css/dashboard.css">
     <link rel="stylesheet" href="/SERVICIO/assets/css/qr.css">
+    <link rel="stylesheet" href="/SERVICIO/assets/css/alumnos.css">
+    <link rel="stylesheet" href="/SERVICIO/assets/css/pagos.css">
 </head>
 
 <body>
@@ -56,5 +58,13 @@ $pagina = isset($_GET['op']) ? strtolower($_GET['op']) : 'dashboard';
         <script src="../assets/js/qr.js"></script>
     <?php endif; ?>
 
+    <?php if ($pagina === 'alumnos'): ?>
+        <script src="../assets/js/alumnos.js"></script>
+    <?php endif; ?>
+
+    <?php if ($pagina === 'pagos'): ?>
+        <script src="../assets/js/pagos.js"></script>
+    <?php endif; ?>
 </body>
+
 </html>

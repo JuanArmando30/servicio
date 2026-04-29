@@ -1,0 +1,166 @@
+/* ── PÁGINA ─────────────────────────────────────── */
+.pagos-page { width: 100%; }
+
+/* ── SCANNER BOX ─────────────────────────────────── */
+.scanner-box {
+    border: 2px dashed #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+    min-height: 180px;
+}
+
+.scanner-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
+#videoQR {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.scanner-line {
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffc107, transparent);
+    animation: scan 2s linear infinite;
+    margin-top: -4px;
+}
+
+@keyframes scan {
+    0%   { transform: translateY(0); opacity: 1; }
+    50%  { opacity: 0.4; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ── AVATAR ──────────────────────────────────────── */
+.avatar-alumno {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffc107, #ffca2c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #1a202c;
+    flex-shrink: 0;
+}
+
+/* ── DÍAS GRID ───────────────────────────────────── */
+.dias-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.dia-toggle input { display: none; }
+
+.dia-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 6px;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.dia-letra {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4a5568;
+}
+
+.dia-nombre {
+    font-size: 0.68rem;
+    color: #a0aec0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.dia-toggle input:checked + .dia-label {
+    background: linear-gradient(135deg, #ffc107, #ffca2c);
+    border-color: #f5c518;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.35);
+}
+
+.dia-toggle input:checked + .dia-label .dia-letra,
+.dia-toggle input:checked + .dia-label .dia-nombre {
+    color: #1a202c;
+}
+
+.dia-label:hover {
+    border-color: #ffc107;
+    transform: translateY(-2px);
+}
+
+/* ── RESUMEN ─────────────────────────────────────── */
+.resumen-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.resumen-total {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.resumen-total span:last-child {
+    color: #f5c518;
+    font-size: 1.3rem;
+}
+
+/* ── BADGES (reusar de alumnos) ──────────────────── */
+.badge-grado {
+    background: #e8f4fd; color: #1a6ea8;
+    border-radius: 6px; padding: 3px 10px;
+    font-size: 0.78rem; font-weight: 600;
+}
+.badge-grupo {
+    background: #f0fdf4; color: #16a34a;
+    border-radius: 6px; padding: 3px 10px;
+    font-size: 0.78rem; font-weight: 600;
+}
+
+/* ── RECIBO DEL MODAL ─────────────────────────────── */
+.recibo-modal {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 14px 16px;
+}
+
+.recibo-fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.recibo-total {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 576px) {
+    .dias-grid { grid-template-columns: repeat(5, 1fr); gap: 4px; }
+    .dia-label { padding: 10px 2px; }
+    .dia-letra { font-size: 0.95rem; }
+    .dia-nombre { font-size: 0.6rem; }
+}

@@ -5,7 +5,7 @@ ini_set('display_errors', 0);
 header('Content-Type: application/json');
 
 require_once __DIR__ . '/../../vendor/autoload.php';
-include "../conexion.php";
+include __DIR__ . "/conexion.php";
 include "../../phpqrcode/qrlib.php";
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -71,7 +71,11 @@ for ($i = $inicio; $i < count($filas); $i++) {
     $id = mysqli_insert_id($conn);
 
     // 3. Generar código único
-    $codigo = bin2hex(random_bytes(8));
+    $caracteres = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+    $codigo = '';
+    for ($j = 0; $j < 10; $j++) {
+        $codigo .= $caracteres[random_int(0, strlen($caracteres) - 1)];
+    }
 
     // 4. Generar imagen QR
     $archivo = $dir . $codigo . ".png";

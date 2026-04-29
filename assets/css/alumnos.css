@@ -1,9 +1,9 @@
-/* ── PÁGINA ─────────────────────────────────────── */
+/* PÁGINA */
 .alumnos-page {
     width: 100%;
 }
 
-/* ── BADGE CONTADOR ─────────────────────────────── */
+/* BADGE CONTADOR */
 .badge-contador {
     background: #fef9e7;
     border: 1px solid #ffc107;
@@ -16,7 +16,7 @@
     align-self: center;
 }
 
-/* ── FILTROS ────────────────────────────────────── */
+/* FILTROS */
 .filter-label {
     font-size: 0.8rem;
     font-weight: 600;
@@ -36,7 +36,7 @@
     box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.15);
 }
 
-/* ── TABLA ──────────────────────────────────────── */
+/* TABLA */
 .tabla-alumnos {
     border-collapse: collapse;
     font-size: 0.88rem;
@@ -76,7 +76,7 @@
     background: #fffbea;
 }
 
-/* ── COLUMNA # ──────────────────────────────────── */
+/* COLUMNA # */
 .tabla-alumnos td:first-child {
     color: #a0aec0;
     font-size: 0.8rem;
@@ -84,13 +84,13 @@
     width: 48px;
 }
 
-/* ── NOMBRE ─────────────────────────────────────── */
+/* ── NOMBRE */
 .nombre-alumno {
     font-weight: 600;
     color: #1a202c;
 }
 
-/* ── BADGES GRADO / GRUPO ───────────────────────── */
+/* BADGES GRADO / GRUPO */
 .badge-grado {
     background: #e8f4fd;
     color: #1a6ea8;
@@ -109,7 +109,7 @@
     font-weight: 600;
 }
 
-/* ── QR ─────────────────────────────────────────── */
+/* QR */
 .badge-qr {
     background: #f5f5f5;
     color: #555;
@@ -127,13 +127,13 @@
     font-style: italic;
 }
 
-/* ── FECHA ──────────────────────────────────────── */
+/* FECHA */
 .fecha-registro {
     color: #718096;
     font-size: 0.82rem;
 }
 
-/* ── RESPONSIVE ─────────────────────────────────── */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .tabla-alumnos th:nth-child(5),
     .tabla-alumnos td:nth-child(5),

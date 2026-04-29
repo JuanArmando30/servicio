@@ -3,7 +3,7 @@ error_reporting(0);
 ini_set('display_errors', 0);
 header('Content-Type: application/json');
 
-include "../conexion.php";
+include __DIR__ . "/../qr/conexion.php";
 
 // Recoger filtros (vienen del fetch como query params)
 $nombre = trim($_GET['nombre'] ?? '');
